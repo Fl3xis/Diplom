@@ -1,4 +1,4 @@
-// add class navbarDark on navbar scroll
+
 const header = document.querySelector('.navbar');
 console.log(header)
 window.onscroll = function() {
@@ -10,7 +10,7 @@ window.onscroll = function() {
         header.classList.remove('navbarDark');
     }
 }
-// collapse navbar after click on small devices
+
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarSupportedContent')
 
@@ -18,7 +18,7 @@ navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
 
-/* marq */
+
 
 var wrapper = document.querySelector('.marquee-wrapper'),
     marquee = document.querySelector('.marquee'),   
